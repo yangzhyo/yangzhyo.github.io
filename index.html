@@ -1,23 +1,43 @@
 ---
 layout: default
 ---
+<div class="posts">
+    <h1 class="content-subhead">Post</h1>
 
-<div class="home">
+    {% for post in paginator.posts %}
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" alt="{{ post.author }}&#x27;s avatar" height="48" width="48" src="/images/avatar/{{ post.author }}.jpg">
 
-  <h1 class="page-heading">Posts</h1>
+            <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <p class="post-meta">
+                 On <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{{ post.author }}" class="post-author">{{ post.author }}</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+            </p>
+        </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <div class="post-description">
+            {{ post.content | split:'<!-- more -->'| first }}
+        </div>
+    </section>
     {% endfor %}
-  </ul>
+</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="pure-g pagination">
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="pure-u-1-2 pagination-item" href="/"><p>Newer</p></a>
+    {% else %}
+    <a class=" pure-u-1-2 pagination-item" href="/page/{{paginator.previous_page}}"><p>Newer</p></a>
+    {% endif %}
+    {% else %}
+    <span class=" pure-u-1-2 pagination-item"><p>Newer</p></span>
+    {% endif %}
 
+
+    {% if paginator.next_page %}
+    <a class=" pure-u-1-2 pagination-item" href="/page/{{paginator.next_page}}"><p>Older</p></a>
+    {% else %}
+    <span class=" pure-u-1-2 pagination-item"><p>Older</p></span>
+    {% endif %}
 </div>

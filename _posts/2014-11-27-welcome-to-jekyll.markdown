@@ -1,63 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "John Test Post"
 date:   2014-11-27 22:17:01
-categories: jekyll update
+categories: test
+author: John
 ---
-
-# H1
-
-## H2
-
-####### H6
-
-**Bold**
-
-*I*
-
-~~Del~~
-
-* Item1
-* Item2
-* Item3
-
-1. Item1
-2. Item2
-3. Item3
-   * Sub Item1
-   * Sub Item2
-
-![Pic](http://gitcafe.com/image.png)
-
-[Link](http://gitcafe.com)
-
-> First quote
-
-> Two quote
-
-***
-
-`<hello world>`
-
-``` ruby
-  def add(a, b)
-    return a + b
-  end
-```
-
-{% highlight ruby %}
-def add(a, b)
-  return a + b
-end
-#add function
-{% endhighlight %}
-
-col1 | col2
------|------
-cell1 | cell2
-cell3l | cell4
-
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+
+<!-- more -->
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
