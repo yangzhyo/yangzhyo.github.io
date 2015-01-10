@@ -56,7 +56,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .brand-title,
 .brand-tagline {
-    margin: 0 5px;
+    margin: 10px 0;
 }
 .brand-title {
     text-transform: uppercase;
