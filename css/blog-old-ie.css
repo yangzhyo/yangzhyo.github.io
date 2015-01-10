@@ -63,6 +63,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .brand-title {
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 .brand-tagline {
