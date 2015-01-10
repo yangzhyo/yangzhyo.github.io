@@ -18,6 +18,7 @@ layout: default
 
         <div class="post-description">
             {{ post.content | split:'<!-- more -->'| first }}
+            <a class="post-category post-category-pure" href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
         </div>
     </section>
     {% endfor %}
