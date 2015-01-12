@@ -77,6 +77,18 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
     list-style: none;
 }
 
+.nav-icon {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.nav-icon a {
+    background: transparent;
+    margin: 10px 10px;
+    color: #fff;
+}
+
 .nav-item {
     display: inline-block;
     *display: inline;
@@ -153,20 +165,36 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
     font-size: 80%;
 }
 
-.post-category-design {
+.post-category-default {
     background: #5aba59;
 }
 
-.post-category-pure {
+.post-category-readmore {
     background: #4d85d1;
 }
 
-.post-category-yui {
+.post-tag {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+
+.post-tag-1 {
     background: #8156a7;
 }
 
-.post-category-js {
+.post-tag-2 {
     background: #df2d4f;
+}
+
+.post-tag-3 {
+    background: #4d85d1;
+}
+
+.post-tag-4 {
+    background: #5aba59;
 }
 
 .post-images {

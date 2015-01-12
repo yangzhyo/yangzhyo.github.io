@@ -7,18 +7,18 @@ layout: default
     {% for post in paginator.posts %}
     <section class="post">
         <header class="post-header">
-            <img class="post-avatar" alt="{{ post.author }}&#x27;s avatar" height="48" width="48" src="/images/avatar/{{ post.author }}.jpg">
+            <a href="/about/{{ post.author }}"><img class="post-avatar" alt="{{ post.author }}&#x27;s avatar" height="48" width="48" src="/images/avatar/{{ post.author }}.jpg"></a>
 
             <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
             <p class="post-meta">
-                 On <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{{ post.author }}" class="post-author">{{ post.author }}</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                 On <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{{ post.author }}" class="post-author">{{ post.author }}</a> under <a class="post-category post-category-default" href="#">{% if post.categories %}{{ post.categories }}{% endif %}</a> {% if post.tags.size > 0 %}Tags: {% for tag in post.tags %}<a class="post-tag " href="#">{{ tag }}</a>{% endfor %}{% endif %}
             </p>
         </header>
 
         <div class="post-description">
             {{ post.content | split:'<!-- more -->'| first }}
-            <a class="post-category post-category-pure" href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
+            <a class="post-category post-category-readmore" href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
         </div>
     </section>
     {% endfor %}
