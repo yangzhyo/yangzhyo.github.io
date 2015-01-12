@@ -1,0 +1,21 @@
+---
+layout: default
+title: 文章分类
+---
+<div>
+	<h1>文章分类</h1>
+    {% for category in site.categories %}
+    <div class="">
+        <h2 class=""><a href="/{{ category | first }}/" class="gray_2">{{ category | first }}</a></h2>
+        <ul class="">
+            {% for post in category[1] %}
+            <li>
+                <b><a href="{{ post.url  }}" title="" class="gray_2" target="_blank">{{ post.title }}</a></b>
+                <span>{{ post.date | date_to_string }}</span>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+    {% endfor %}
+</div>

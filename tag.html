@@ -1,0 +1,10 @@
+---
+layout: default
+title: 标签云
+---
+<h1>标签云</h1>
+<div id='tagcloud' >
+    {% for tag in site.tags %}
+    <a href="/tag#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    {% endfor %}
+</div>

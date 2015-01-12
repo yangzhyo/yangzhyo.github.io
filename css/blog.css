@@ -214,6 +214,27 @@ a.pagination-item:hover {
     background: none;
 }
 
+/* top */
+.go-to-top {
+    position: fixed;
+    _position: absolute;
+    bottom: 20px;
+    right: 5px;
+    display: none;
+}
+
+.go-to-top a, .go-to-top a:link {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background: url(/images/go-top.png) no-repeat;
+    outline: none;
+}
+
+.go-to-top a:hover {
+    outline: none;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;

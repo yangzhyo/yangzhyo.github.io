@@ -252,3 +252,24 @@ a.pagination-item:hover {
     top: 0;
     bottom: 0;
 }
+
+/* top */
+.go-to-top {
+    position: fixed;
+    _position: absolute;
+    bottom: 20px;
+    right: 5px;
+    display: none;
+}
+
+.go-to-top a, .go-to-top a:link {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background: url(/images/go-top.png) no-repeat;
+    outline: none;
+}
+
+.go-to-top a:hover {
+    outline: none;
+}
