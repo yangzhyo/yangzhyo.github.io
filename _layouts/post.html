@@ -8,7 +8,7 @@ layout: default
             <h2 class="post-title">{{ page.title }}</h2>
 
             <p class="post-meta">
-                 On <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{% if page.author %}{{ page.author }}{% endif %}" class="post-author">{% if page.author %}{{ page.author }}{% endif %}</a> under <a class="post-category post-category-default" href="#">{% if page.categories %}{{ page.categories }}{% endif %}</a> {% if page.tags.size > 0 %}Tags: {% for tag in page.tags %}<a class="post-tag " href="#">{{ tag }}</a>{% endfor %}{% endif %}
+                 On <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{% if page.author %}{{ page.author }}{% endif %}" class="post-author">{% if page.author %}{{ page.author }}{% endif %}</a> {% if page.categories %}under <a class="post-category post-category-default" href="/category.html#{{ page.categories }}">{{ page.categories }}{% endif %}</a> {% if page.tags.size > 0 %}Tags: {% for tag in page.tags %}<a class="post-tag " href="/tag.html#{{ tag }}">{{ tag }}</a>{% endfor %}{% endif %}
             </p>
         </header>
 

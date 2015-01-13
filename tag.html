@@ -3,8 +3,34 @@ layout: default
 title: 标签云
 ---
 <h1>标签云</h1>
-<div id='tagcloud' >
+<div id='tags' >
     {% for tag in site.tags %}
-    <a href="/tag#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    <a href="/tag.html#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
     {% endfor %}
 </div>
+<div class="f5">
+    {% for tag in site.tags %}
+    <div class="column fJqueryba">
+        <h2 class=""><a name="{{ tag[0] }}"></a>{{ tag[0] }}</h2>
+        <ul class="columnUl">
+            {% for post in tag[1] %}
+            <li>
+                <b><a href="{{ post.url  }}" title="" class="gray_2" target="_blank">{{ post.title }}</a></b>
+                <span>{{ post.date | date_to_string }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+<script type="text/javascript" src="/js/jquery.tagcloud.js"></script>
+<script type="text/javascript">
+$.fn.tagcloud.defaults = {
+  size: {start: 14, end: 18, unit: 'pt'},
+  color: {start: '#cde', end: '#f52'}
+};
+
+$(function () {
+  $('#tags a').tagcloud();
+});
+</script>
