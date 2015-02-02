@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
+<body>
+{% include header.html %}
 
-  {% include head.html %}
+<div class="am-g am-g-fixed blog-g-fixed">
+  
+  <div class="am-u-md-8">
+    {{ content }}
+  </div>
 
-  <body>
-    <div id="layout" class="pure-g">
-      {% include sidebar.html %}
+  {% include sidebar.html %}
 
-      <div class="content pure-u-1 pure-u-md-3-4">
-          <div>
-              <!--[if lte IE 8]>
-              <i class="label label-danger">为淘汰老IE作贡献，本网站只支持IE9+，以及其他浏览器。</i>
-              <![endif]-->
+</div>
 
-              <!-- A wrapper for all the blog posts -->
-              {{ content }}
+{% include footer.html %}
 
-              {% include footer.html %}
-          </div>
-      </div>
-    </div>
-  </body>
-
+</body>
 </html>

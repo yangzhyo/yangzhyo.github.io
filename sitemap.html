@@ -1,13 +1,15 @@
 ---
-layout: default
+layout: page
+title: Sitemap
 ---
-<h1>Pages:</h1>
+
+<h3>Pages:</h3>
 <ul>
 {% for page in site.pages %}
 	<li><a href="{{ page.url | prepend: site.baseurl }}">{% if page.title %}{{ page.title }}{% else %}{{ page.url }}{% endif %}</a></li>
 {% endfor %}
 </ul>
-<h1>Posts:</h1>
+<h3>Posts:</h3>
 <ul>
 {% for post in site.posts %}
 	<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>

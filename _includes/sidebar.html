@@ -1,40 +1,29 @@
-<div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-        <a href="/"><img class="brand-avatar" height="150" width="150" src="/images/avatar/John.jpg"></a>
-        <h1 class="brand-title">{{ site.title }}</h1>
-        <h2 class="brand-tagline">{{ site.tagline }}</h2>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="pure-button" href="/tag.html">标签云</a>
-                </li>
-                <li class="nav-item">
-                    <a class="pure-button" href="/category.html">文章分类</a>
-                </li>
-                <li class="nav-item">
-                    <a class="pure-button" href="/timeline.html">时间线</a>
-                </li>
-            </ul>
-        </nav>
-        <br/>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-icon">
-                    <a href="http://github.com/{{ site.github_username }}"><i class="fa fa-github fa-2x"></i></a>
-                </li>
-                <li class="nav-icon">
-                    <a href="http://weibo.com/{{ site.weibo_username }}"><i class="fa fa-weibo fa-2x"></i></a>
-                </li>
-                <li class="nav-icon">
-                    <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-2x"></i></a>
-                </li>
-                <li class="nav-icon">
-                    <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-2x"></i></a>
-                </li>
-                <li class="nav-icon">
-                    <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss fa-2x"></i></a>
-                </li>
-            </ul>
-        </nav>
+<div class="am-u-md-4 blog-sidebar">
+    <div class="am-panel-group">
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">关于我</div>
+        <div class="am-panel-bd">
+          <p>{{ site.description }}</p>
+          <a class="am-btn am-btn-success am-btn-sm" href="/about/">查看更多 →</a>
+        </div>
+      </section>
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">文章目录</div>
+        <ul class="am-list blog-list">
+          {% for post in site.posts %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">作者</div>
+        <div class="am-panel-bd">
+          <ul class="am-avg-sm-4 blog-team">
+            <li><a href="/about/John"><img class="am-thumbnail" src="/assets/i/avatar/John.jpg" alt="John" title="John"/></a></li>
+            <li><a href="/about/Yoyo"><img class="am-thumbnail" src="/assets/i/avatar/Yoyo.jpg" alt="Yoyo" title="Yoyo"/></a></li>
+          </ul>
+        </div>
+      </section>
     </div>
 </div>

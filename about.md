@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: 关于我们
 permalink: /about/
 ---
-过期程序员，天秤座，喜欢吃开心果。
-。。。。。。。
+
+老杨同志和Yoyo记录一些事儿的地方。。。

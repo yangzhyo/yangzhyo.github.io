@@ -1,12 +1,18 @@
-<div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="http://twitter.com/{{ site.twitter_username }}/">Twitter</a></li>
-            <li><a href="http://github.com/{{ site.github_username }}">GitHub</a></li>
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a></li>
-            <li><a href="{{ "/sitemap.html" | prepend: site.baseurl }}">Sitemap</a></li>
-        </ul>
-    </div>
-</div>
-<div class="go-to-top"><a href="javascript:;" title="返回顶部"></a></div>
+<footer class="blog-footer">
+  <p>blog-老杨记事儿<br/>
+    <small>© Copyright YangZhiYong.com. Powered by the AmazeUI.</small>
+  </p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/assets/js/polyfill/rem.min.js"></script>
+<script src="/assets/js/polyfill/respond.min.js"></script>
+<script src="/assets/js/amazeui.legacy.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/amazeui.min.js"></script>
+<!--<![endif]-->

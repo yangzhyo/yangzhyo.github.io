@@ -1,60 +1,41 @@
 ---
 layout: default
 ---
-<div class="posts">
-    <h1 class="content-subhead">Post</h1>
 
     {% for post in paginator.posts %}
-    <section class="post">
-        <header class="post-header">
-            <a href="/about/{{ post.author }}"><img class="post-avatar" alt="{{ post.author }}&#x27;s avatar" height="48" width="48" src="/images/avatar/{{ post.author }}.jpg"></a>
+    <article class="blog-main">
+      <h3 class="am-article-title blog-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      <h4 class="am-article-meta blog-meta">by <a href="/about/{{ post.author }}">{{ post.author }}</a> posted on {{ post.date | date: "%b %-d, %Y" }} {% if post.categories %}under <a href="/category.html#{{ post.categories }}">{{ post.categories }}</a>{% endif %} {% if post.tags.size > 0 %}Tags: {% for tag in post.tags %}<a href="/tag.html#{{ tag }}">{{ tag }},</a>{% endfor %}{% endif %}</h4>
 
-            <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-            <p class="post-meta">
-                 On <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> By <a href="/about/{{ post.author }}" class="post-author">{{ post.author }}</a> {% if post.categories %}under <a class="post-category post-category-default" href="/category.html#{{ post.categories }}">{{ post.categories }}{% endif %}</a> {% if post.tags.size > 0 %}Tags: {% for tag in post.tags %}<a class="post-tag " href="/tag.html#{{ tag }}">{{ tag }}</a>{% endfor %}{% endif %}
-            </p>
-        </header>
-
-        <div class="post-description">
-            {{ post.content | split:'<!-- more -->'| first }}
-            <a class="post-category post-category-readmore" href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
+      <div class="am-g blog-content">
+        <div class="am-u-lg-12">
+          {{ post.content | split:'<!-- more -->'| first }}
+          <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
         </div>
-    </section>
+      </div>
+      
+    </article>
+
+    <hr class="am-article-divider blog-hr">
+
     {% endfor %}
-</div>
-<!--
-<div class="pure-g pagination">
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a class="pure-u-1-2 pagination-item" href="/"><p>Newer</p></a>
-    {% else %}
-    <a class=" pure-u-1-2 pagination-item" href="/page/{{paginator.previous_page}}"><p>Newer</p></a>
-    {% endif %}
-    {% else %}
-    <span class=" pure-u-1-2 pagination-item"><p>Newer</p></span>
-    {% endif %}
 
+    <ul class="am-pagination blog-pagination">
+      {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+      <li class="am-pagination-prev"><a href="/">&laquo; 上一页</a></li>
+      {% else %}
+      <li class="am-pagination-prev"><a href="/page/{{paginator.previous_page}}">&laquo; 上一页</a></li>
+      {% endif %}
+      {% else %}
+      <li class="am-pagination-prev"><a href="#">&laquo; 上一页</a></li>
+      {% endif %}
 
-    {% if paginator.next_page %}
-    <a class=" pure-u-1-2 pagination-item" href="/page/{{paginator.next_page}}"><p>Older</p></a>
-    {% else %}
-    <span class=" pure-u-1-2 pagination-item"><p>Older</p></span>
-    {% endif %}
-</div>
--->
-<nav class="pagination" role="navigation">
-  {% if paginator.page == 1 %}
-  <span class="pagination__page-number">1</span>
-  {% else %}
-  <a href="{{ site.link }}">1</a>
-  {% endif %}
-
-  {% for count in (2..paginator.total_pages) %}
-  {% if count == paginator.page %}
-  <span class="pagination__page-number">{{ count }}</span>
-  {% else %}
-  <a href="{{ site.link }}/page/{{ count }}">{{ count }}</a>
-  {% endif %}
-  {% endfor %}
-</nav>
+      {% if paginator.next_page %}
+      <li class="am-pagination-next"><a href="/page/{{paginator.next_page}}">下一页 &raquo;</a></li>
+      {% else %}
+      <li class="am-pagination-next"><a href="#">下一页 &raquo;</a></li>
+      {% endif %}
+    </ul>
