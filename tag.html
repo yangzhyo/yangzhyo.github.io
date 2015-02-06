@@ -9,29 +9,25 @@ title: 标签云
     {% endfor %}
 </div>
 <p></p>
+
 {% for tag in site.tags %}
-<div>
-    <h3><a name="{{ tag[0] }}">{{ tag[0] }}</a></h3>
-    <ul>
-        {% for post in tag[1] %}
-        <li>
-            <a href="{{ post.url  }}" title="" target="_blank">{{ post.title }}</a>
-            <span>{{ post.date | date_to_string }}</span>
-        </li>
-        {% endfor %}
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+  <div class="am-list-news-hd am-cf">
+    <a name="{{ tag[0] }}" class="">
+      <h2>{{ tag[0] }}</h2>
+      <!--<span class="am-list-news-more am-fr">更多 &raquo;</span>-->
+    </a>
+  </div>
+  <div class="am-list-news-bd">
+    <ul class="am-list">
+      {% for post in tag[1] %}
+      <li class="am-g am-list-item-dated">
+        <a href="{{ post.url }}" class="am-list-item-hd ">{{ post.title }}</a>
+        <span class="am-list-date">{{ post.date | date_to_string }}</span>
+      </li>
+      {% endfor %}
     </ul>
+  </div>
 </div>
 {% endfor %}
 
-<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.tagcloud.js"></script>
-<script type="text/javascript">
-$.fn.tagcloud.defaults = {
-  size: {start: 14, end: 18, unit: 'pt'},
-  color: {start: '#cde', end: '#f52'}
-};
-
-$(function () {
-  $('#tags a').tagcloud();
-});
-</script>

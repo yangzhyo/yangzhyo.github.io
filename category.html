@@ -3,16 +3,23 @@ layout: page
 title: 文章分类
 ---
 
-    {% for category in site.categories %}
-    <div>
-        <h3><a name="{{ category | first }}">{{ category | first }}</a></h3>
-        <ul>
-            {% for post in category[1] %}
-            <li>
-                <a href="{{ post.url  }}">{{ post.title }}</a>
-                <span>{{ post.date | date_to_string }}</span>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endfor %}
+{% for category in site.categories %}
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+  <div class="am-list-news-hd am-cf">
+    <a name="{{ category | first }}" class="">
+      <h2>{{ category | first }}</h2>
+      <!--<span class="am-list-news-more am-fr">更多 &raquo;</span>-->
+    </a>
+  </div>
+  <div class="am-list-news-bd">
+    <ul class="am-list">
+      {% for post in category[1] %}
+      <li class="am-g am-list-item-dated">
+        <a href="{{ post.url }}" class="am-list-item-hd ">{{ post.title }}</a>
+        <span class="am-list-date">{{ post.date | date_to_string }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endfor %}

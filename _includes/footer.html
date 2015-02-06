@@ -16,3 +16,15 @@
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/amazeui.min.js"></script>
 <!--<![endif]-->
+
+<script type="text/javascript" src="/assets/js/jquery.tagcloud.js"></script>
+<script type="text/javascript">
+$.fn.tagcloud.defaults = {
+  size: {start: 12, end: 16, unit: 'pt'},
+  color: {start: '#0e90d2', end: '#f52'}
+};
+
+$(function () {
+  $('#tags a').tagcloud();
+});
+</script>

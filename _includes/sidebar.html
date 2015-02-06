@@ -7,15 +7,25 @@
           <a class="am-btn am-btn-success am-btn-sm" href="/about/">查看更多 →</a>
         </div>
       </section>
+      {% if site.related_posts %}
       <section class="am-panel am-panel-default">
-        <div class="am-panel-hd">文章目录</div>
+        <div class="am-panel-hd">推荐文章</div>
+        <ul class="am-list blog-list">
+          {% for post in site.related_posts %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% else %}
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">最新文章</div>
         <ul class="am-list blog-list">
           {% for post in site.posts %}
           <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </section>
-
+      {% endif %}
       <section class="am-panel am-panel-default">
         <div class="am-panel-hd">作者</div>
         <div class="am-panel-bd">
@@ -23,6 +33,22 @@
             <li><a href="/about/John"><img class="am-thumbnail" src="/assets/i/avatar/John.jpg" alt="John" title="John"/></a></li>
             <li><a href="/about/Yoyo"><img class="am-thumbnail" src="/assets/i/avatar/Yoyo.jpg" alt="Yoyo" title="Yoyo"/></a></li>
           </ul>
+        </div>
+      </section>
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">标签云</div>
+        <div class="am-panel-bd" id="tags">
+          {% for tag in site.tags %}
+          <a href="/tag.html#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">文章分类</div>
+        <div class="am-panel-bd">
+          {% for category in site.categories %}
+          <a href="/category.html#{{ category[0] }}" title="{{ category[0] }}">{{ category[0] }}({{ category[1].size }})</a>
+          {% endfor %}
         </div>
       </section>
     </div>
