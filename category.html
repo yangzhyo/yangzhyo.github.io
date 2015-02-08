@@ -3,6 +3,13 @@ layout: page
 title: 文章分类
 ---
 
+<div id='tags' >
+    {% for category in site.categories %}
+    <a href="/category.html#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">{{ category[0] }}({{ category[1].size }})</a>
+    {% endfor %}
+</div>
+<p></p>
+
 {% for category in site.categories %}
 <div data-am-widget="list_news" class="am-list-news am-list-news-default">
   <div class="am-list-news-hd am-cf">

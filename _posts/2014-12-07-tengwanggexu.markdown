@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "滕王阁序"
-date:   2015-02-02 21:08:00
+date:   2014-12-07 21:08:00
 categories: 诗词歌赋
 author: Yoyo
 tags : [骈文,王勃]
