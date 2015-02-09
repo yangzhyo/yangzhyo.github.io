@@ -51,6 +51,26 @@
           {% endfor %}
         </div>
       </section>
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">文章归档</div>
+        <div class="am-panel-bd">
+          {% for post in site.posts %}
+              {% capture ym1 %}{{post.date | date:"%Y-%m"}}{% endcapture %}
+              {% if ym2 != ym1 %}
+                  {% if ym2 %}
+          <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> 
+                  {% endif %}
+                  {% assign ym2 = ym1 %}
+                  {% assign count = 1 %}
+              {% else %}
+                  {% assign count = count + 2 %}
+              {% endif %}
+          {% endfor %}
+          {% if ym2 %} 
+          <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> 
+          {% endif %}
+        </div>
+      </section>
     </div>
     <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
       <a href="#top" title="回到顶部">
