@@ -3,17 +3,17 @@ layout: page
 title: 时间线
 ---
 
-    {% for post in site.posts %}
-        {% capture ym1 %}{{post.date | date:"%Y-%m"}}{% endcapture %}
-        {% if ym2 != ym1 %}
-            {% if ym2 %} <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> {% endif %}
-            {% assign ym2 = ym1 %}
-            {% assign count = 1 %}
-        {% else %}
-            {% assign count = count + 2 %}
-        {% endif %}
-    {% endfor %}
-    {% if ym2 %} <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> {% endif %}
+{% for post in site.posts %}
+    {% capture ym1 %}{{post.date | date:"%Y-%m"}}{% endcapture %}
+    {% if ym2 != ym1 %}
+        {% if ym2 %} <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> {% endif %}
+        {% assign ym2 = ym1 %}
+        {% assign count = 1 %}
+    {% else %}
+        {% capture count %}{{ count | plus:1 }}{% endcapture %}
+    {% endif %}
+{% endfor %}
+{% if ym2 %} <a href="/timeline.html#{{ ym2 }}">{{ ym2 }}({{ count }})</a> {% endif %}
 
 <ul class="am-list">
     {% for post in site.posts %}

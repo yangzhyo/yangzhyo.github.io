@@ -11,7 +11,7 @@
       <section class="am-panel am-panel-default">
         <div class="am-panel-hd">推荐文章</div>
         <ul class="am-list blog-list">
-          {% for post in site.related_posts %}
+          {% for post in site.related_posts limit:5 %}
           <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
@@ -20,7 +20,7 @@
       <section class="am-panel am-panel-default">
         <div class="am-panel-hd">最新文章</div>
         <ul class="am-list blog-list">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:5 %}
           <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
@@ -63,7 +63,7 @@
                   {% assign ym2 = ym1 %}
                   {% assign count = 1 %}
               {% else %}
-                  {% assign count = count + 2 %}
+                  {% capture count %}{{ count | plus:1 }}{% endcapture %}
               {% endif %}
           {% endfor %}
           {% if ym2 %} 
