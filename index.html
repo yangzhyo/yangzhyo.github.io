@@ -21,7 +21,7 @@ layout: default
     <hr class="am-article-divider blog-hr">
 
     {% endfor %}
-
+    <!--
     <ul class="am-pagination blog-pagination">
       {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
@@ -39,3 +39,29 @@ layout: default
       <li class="am-pagination-next"><a href="#">下一页 &raquo;</a></li>
       {% endif %}
     </ul>
+    -->
+    {% if paginator.total_pages > 1 %}
+    <ul class="am-pagination">
+      {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+      {% else %}
+        <li class="am-disabled"><a href="#">&laquo;</a></li>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <li class="am-active"><a href="#">{{ page }}</a></li>
+        {% elsif page == 1 %}
+          <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        {% else %}
+          <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+      {% else %}
+        <li class="am-disabled"><a href="#">&raquo;</a></li>
+      {% endif %}
+    </ul>
+    {% endif %}
