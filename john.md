@@ -5,6 +5,11 @@ permalink: /about/John/
 ---
 过期程序员，天秤座，喜欢吃开心果。
 
+<a href="http://twitter.com/{{ site.twitter_username }}" class="am-icon-btn am-icon-twitter"></a>
+<a href="http://facebook.com/{{ site.facebook_username }}" class="am-icon-btn am-icon-facebook"></a>
+<a href="http://github.com/{{ site.github_username }}" class="am-icon-btn am-icon-github"></a>
+<a href="http://weibo.com/{{ site.weibo_username }}" class="am-icon-btn am-icon-weibo"></a>
+
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
