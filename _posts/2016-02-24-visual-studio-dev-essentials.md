@@ -9,7 +9,7 @@ tags: [Visual Studio]
 
 技术高度社区化的今天，各个生态环境的主宰者们都想方设法盘活自己的阵营，给开发者带来很多福音。今天来看看微软给我们带来些什么礼物？
 
-#### Visual Studio Dev Essentials
+####Visual Studio Dev Essentials
 从[Visual Studio官方主页](http://www.visualstudio.com)的显眼位置，可以看到这个计划的推广方案：
 
 > Everything you need to build and deploy your app on any platform – for FREE.
@@ -20,8 +20,7 @@ tags: [Visual Studio]
 
 [https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx](https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx "点击查看")
 
-#### 提供什么？
-![](http://d.pcs.baidu.com/thumbnail/6e8a2d2ba88ca7c39d3f13eb3cf7ba41?fid=486812351-250528-95413115754368&time=1456239600&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Xm4DT%2FgsHDLtnUEfxGHOitmtZ0U%3D&rt=sh&expires=2h&r=874365622&sharesign=unknown&size=c710_u500&quality=100)
+####提供什么？
 
 #### 计划权益
 ![](http://d.pcs.baidu.com/thumbnail/e7d68829e59693942e5cdbb11bb108ce?fid=486812351-250528-418100085648818&time=1456239600&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-4HaapEuVybPf%2FlYBhUzMFDV7%2Bgs%3D&rt=sh&expires=2h&r=156699191&sharesign=unknown&size=c710_u500&quality=100)
