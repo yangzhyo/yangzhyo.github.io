@@ -17,6 +17,12 @@ tags : [Amaze UI,前端]
 <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
 ```
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 更多资料，请参考官方网站：
 
 [amazeui.org](http://amazeui.org)
