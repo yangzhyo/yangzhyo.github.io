@@ -21,7 +21,7 @@ tags: [Visual Studio]
 [https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx](https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx "点击查看")
 
 #### 提供什么？
-[Imgur](http://i.imgur.com/ZnGSDxq.jpg)
+![Imgur](http://i.imgur.com/ZnGSDxq.jpg)
 
 #### 计划权益
 
