@@ -17,6 +17,10 @@ tags : [Amaze UI,前端]
 <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
 ```
 
+{% highlight html %}
+<link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
+{% endhighlight %}
+
 更多资料，请参考官方网站：
 
 [amazeui.org](http://amazeui.org)
