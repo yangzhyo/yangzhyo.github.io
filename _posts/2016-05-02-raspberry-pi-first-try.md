@@ -41,7 +41,11 @@ tags: [Raspberry Pi, Raspbian]
 分享几张图，
 
 ![http://i.imgur.com/kIBOaiF.jpg](http://i.imgur.com/kIBOaiF.jpg)
+
 ![http://i.imgur.com/KVK2Jw5.jpg](http://i.imgur.com/KVK2Jw5.jpg)
+
 ![http://i.imgur.com/FdjESDU.jpg](http://i.imgur.com/FdjESDU.jpg)
+
 ![http://i.imgur.com/0qnja1h.jpg](http://i.imgur.com/0qnja1h.jpg)
+
 ![http://i.imgur.com/cPH1lvN.jpg](http://i.imgur.com/cPH1lvN.jpg)
