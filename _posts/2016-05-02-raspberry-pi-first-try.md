@@ -6,7 +6,9 @@ categories: raspberrypi
 author: John
 tags: [Raspberry Pi, Raspbian]
 ---
+
 从公司搞来一台树莓派二代Model B，当下最新应该是第三代Model B。
+
 还没想好怎么玩，先把系统装上，跑起来看看啥样。
 
 #####配置：
@@ -23,7 +25,7 @@ tags: [Raspberry Pi, Raspbian]
 * Micro SD card slot
 * VideoCore IV 3D graphics core
 
-没有花一分钱，把家里已经退役的那些“老家伙”们都请出来了，
+不花一分钱，把家里已经退役的那些“老家伙”们都请出来了，
 
 * 已退役的Sony安卓手机充电器
 * 已退役的Moto安卓手机MicroSD卡8G,Class 2
