@@ -1,15 +1,17 @@
 ---
 layout: page
-title: 关于我们
+title: 关于我
 permalink: /about/
 ---
 
-这里是老杨同志和Yoyo同学记录一些事儿的地方。。。 
+有点过期的程序员，正在努力找回自己。
 
-老杨：过期程序员，天秤座，喜欢吃开心果。 
+天秤座，喜欢吃开心果。 
 
-Yoyo：过期测试工程师，现在做一些产品的事儿。
-
+<a href="http://twitter.com/{{ site.twitter_username }}" class="am-icon-btn am-icon-twitter"></a>
+<a href="http://facebook.com/{{ site.facebook_username }}" class="am-icon-btn am-icon-facebook"></a>
+<a href="http://github.com/{{ site.github_username }}" class="am-icon-btn am-icon-github"></a>
+<a href="http://weibo.com/{{ site.weibo_username }}" class="am-icon-btn am-icon-weibo"></a>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

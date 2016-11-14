@@ -1,14 +1,2 @@
-# yangzhyo
-
-~~Del~~
-
-> q
-> q2
-
-```ruby
-  def add(a, b)
-    return a + b
-  end
-```
-
-hshsshhshshs
+###
+This is John.Z.Yang's blog.
