@@ -19,11 +19,11 @@ tags: [macOS]
 
 ### 改装清单
 * iTerm 2
-* Solarized theme
+* iTerm Solarized theme
 * zsh
 * oh-my-zsh
 * Powerline font
-* Agnoster theme
+* zsh agnoster theme
 * zsh-syntax-highlighting plugin
 
 # 改装过程
@@ -52,6 +52,7 @@ iTerm提供了非常方便快捷的呼出功能，不管你的桌面环境有多
 	![Hotkey](http://imgur.com/8Lg58dX.png)
 	
 	是不是很Cool？注意这里可以为这个折叠层的显示设置单独设定一个Profile，当然也可以共享默认的Profile。
+
 ### 其它很酷的特性
 这里不一一列举了，待大家到[官网](http://www.iterm2.com/features.html)发掘。
 
@@ -91,6 +92,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 要用好这套theme，有两个准备条件：
 
 1. 推荐配合iTerm 2 + Solarized Dark使用
+	
 	看默认的Terminal + bash有多丑：
 	![terminal](http://imgur.com/c5CJGVB.png)
 2. 安装Powerline字体，否则那些酷酷的符号无法正确显示
