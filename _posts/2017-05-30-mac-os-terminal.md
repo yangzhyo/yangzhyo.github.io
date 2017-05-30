@@ -57,7 +57,7 @@ iTerm提供了非常方便快捷的呼出功能，不管你的桌面环境有多
 这里不一一列举了，待大家到[官网](http://www.iterm2.com/features.html)发掘。
 
 ## zsh
-macOS默认Shell是bash，而我们要改装的是另一款强大的Shell [zsh](http://www.zsh.org/)，全称Z Shell，相比bash有大量的改进,参考[Wiki](https://zh.wikipedia.org/wiki/Z_shell)。
+macOS默认Shell是bash，而我们要改装的是另一款强大的Shell: [zsh](http://www.zsh.org/)，全称Z Shell，相比bash有大量的改进,参考[Wiki](https://zh.wikipedia.org/wiki/Z_shell)。
 
 在```/etc/shells```文件列举了所有支持的shell解释器:
 
