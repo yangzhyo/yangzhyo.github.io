@@ -4,9 +4,7 @@ title: 关于我
 permalink: /about/
 ---
 
-有点过期的程序员，正在努力找回自己。
-
-天秤座，喜欢吃开心果。 
+{{ site.description }}
 
 <a href="http://twitter.com/{{ site.twitter_username }}" class="am-icon-btn am-icon-twitter"></a>
 <a href="http://facebook.com/{{ site.facebook_username }}" class="am-icon-btn am-icon-facebook"></a>
