@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "PHP调试利器-Xdebug"
-date: 2017-06-04 23:11:00
+date: 2017-06-10 06:21:00
 categories: PHP
 author: John
-tags: [PHP]
+tags: [PHP,Xdebug]
 ---
 
 > 工欲善其事必先利其器，学习一门新语言，调试器的使用必不可少，看到有一些同学还在通过echo或者var_dump来调试程序，小小的心疼一下，觉得有必要分享一下PHP的调试器的使用。
@@ -54,7 +54,7 @@ Xdebug还提供以下功能：
 * Xdebug connects to 10.0.1.42:9000
 * Debugging runs, HTTP Response provided
 
-以上这种模式是在php.ini中配置了IDE的IP地址以及监听的端口。这种模式的缺陷是配死了IDE目标，不能支持多用户调试。所以Xdebug还提供了一种多用户的调度模式，这种模式无需配置remote_host，而是配置[xdebug.remote_connect_back](https://xdebug.org/docs/all_settings#remote_connect_back)=On，调度过程如下：
+以上这种模式是在php.ini中配置了IDE的IP地址以及监听的端口。这种模式的缺陷是配死了IDE目标，不能支持多用户调试。所以Xdebug还提供了一种多用户的调度模式，这种模式无需配置remote_host，而是配置[xdebug.remote_connect_back](https://xdebug.org/docs/all_settings#remote_connect_back)=On，Xdebug会记下来访地址，作为调试时的连接目标。调度过程如下：
 
 ![xdebug运行结构](https://xdebug.org/images/docs/dbgp-setup2.gif)
 
@@ -95,6 +95,8 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 	
 以上输出若能看到Xdebug版本信息，就ok了。另外，在phpinfo中，可以看到xdebug的配置信息，搜搜看，这些配置都是可以在php.ini中进行修改的，各自代表的意思大家可以查官网，这里就不详述了。
 
+![phpinfo](http://imgur.com/mYvST9x.png)
+
 ## 配置IDE
 以PHPStorm为例，PHPStorm实现了DBGp协议，我们需要配置它监听的端口。以下是默认配置，如果没有冲突可以不用改。在帮其他同学trouble shooting时，发现php-fpm和xdebug默认都使用9000号端口，真是一个奇怪的配置啊，难道他们俩不应该经常被同时使用吗？如果你发现自己的debug不能正常工作，不妨检查一下这一点，将他们调整为不同的端口。
 
@@ -120,13 +122,13 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 
 	其实IDE提供了快捷的操作方式，不用你手动写URL参数。见[PHPStorm官方帮助](https://confluence.jetbrains.com/display/PhpStorm/Using+the+PhpStorm+Debugger)，简单来说，就是你需要配置好Web Server，PHP Web Application，再点击后上角的“小瓢虫”按钮，IDE就会自动打开浏览器，帮你输好网址，并添加QueryString:XDEBUG_SESSION_START=session_name。
 	
-2. 安装浏览器插件，插件会在你请求一个PHP页面时，带上一个Debug Session Cookie，这样就不用在URL上带参数了。
+2. 安装浏览器插件，插件会在你请求一个PHP页面时，带上一个XDEBUG_SESSION Cookie，这样就不用在URL上带参数了。
 	
 	支持的插件：
-	* Firefox: [extension](https://addons.mozilla.org/en-US/firefox/addon/the-easiest-xdebug/)
-	* Chrome: [extension](https://chrome.google.com/extensions/detail/eadndfjplgieldjbigjakmdgkmoaaaoc)
-	* Safari: [extension](http://benmatselby.posterous.com/xdebug-toggler-for-safari)
-	* Opera: [extension](https://addons.opera.com/addons/extensions/details/xdebug-launcher/?display=en)
+	* Firefox: [the-easiest-xdebug](https://addons.mozilla.org/en-US/firefox/addon/the-easiest-xdebug/)
+	* Chrome: [Xdebug helper](https://chrome.google.com/extensions/detail/eadndfjplgieldjbigjakmdgkmoaaaoc)
+	* Safari: [xdebug-toggler-for-safari](http://benmatselby.posterous.com/xdebug-toggler-for-safari)
+	* Opera: [xdebug-launcher](https://addons.opera.com/addons/extensions/details/xdebug-launcher/?display=en)
 
 试试以上两种方法，断点命中！开始享受调试。
 
