@@ -7,14 +7,14 @@ author: John
 tags: [PHP,Xdebug]
 ---
 
-> 工欲善其事必先利其器，学习一门新语言，调试器的使用必不可少，看到有一些同学还在通过echo或者var_dump来调试程序，小小的心疼一下，觉得有必要分享一下PHP的调试器的使用。
+> 工欲善其事必先利其器，学习一门新语言，调试器的使用必不可少，看到有一些同学还在通过echo或者var_dump来调试程序，小小的心疼一下，觉得有必要分享一下PHP调试器的使用。
 
-PHP有两种流行的调试器，
+PHP目前有两种流行的调试器，
 
 * [Xdebug](https://xdebug.org/)
 * [Zend Debugger](https://www.zend.com/en/products/server/z-ray)
 
-我在学习和研究过程中，发现网上的各种信息过于凌乱，感到痛苦，影响理解和使用。今天我以Xdebug为例，先解释其基本的工作原理，再说明生产过程中如何使用，希望能带给大家清晰的知识。
+我在学习和研究过程中，发现网上的各种信息过于凌乱，感到痛苦，影响理解和使用。今天我以Xdebug为例，先解释其基本的工作原理，再说明生产过程中如何使用，希望能带给大家清晰易懂的知识。
 
 # Xdebug
 
@@ -29,7 +29,7 @@ Debug信息包含：
 * memory allocation
 * protection for infinite recursions
 
-Xdebug还提供以下功能：
+此外，Xdebug还提供以下功能：
 
 * profiling information for PHP scripts
 * code coverage analysis
@@ -41,7 +41,7 @@ Xdebug还提供以下功能：
 
 原文参考：[https://xdebug.org/docs/remote](https://xdebug.org/docs/remote)
 
-简单来说，XDebug调试是一种C/S结构，Client是PHP-Xdebug插件（注意不是Web Server，很多同学会在这里搞错），Server是我们的IDE（或者各种Editor插件），中间通过[DBGp](https://xdebug.org/docs-dbgp.php)协议通信。PHP脚本在运行时，由Xdebug插件将调试信息发送给IDE。
+简单来说，XDebug调试是一种C/S结构，Client是PHP-Xdebug插件，Server是我们的IDE（或者各种Editor插件），中间通过[DBGp](https://xdebug.org/docs-dbgp.php)协议通信。PHP脚本在运行时，由Xdebug插件向IDE发起连接，将调试信息发送给IDE，并通过DBGp协议进行互动。
 
 看下图，就明白了：
 
@@ -54,7 +54,7 @@ Xdebug还提供以下功能：
 * Xdebug connects to 10.0.1.42:9000
 * Debugging runs, HTTP Response provided
 
-以上这种模式是在php.ini中配置了IDE的IP地址以及监听的端口。这种模式的缺陷是配死了IDE目标，不能支持多用户调试。所以Xdebug还提供了一种多用户的调度模式，这种模式无需配置remote_host，而是配置[xdebug.remote_connect_back](https://xdebug.org/docs/all_settings#remote_connect_back)=On，Xdebug会记下来访地址，作为调试时的连接目标。调度过程如下：
+以上是单人模式，在php.ini中配置了IDE的IP地址以及监听的端口。这种模式的缺陷是配死了IDE目标，不能支持多用户调试。所以Xdebug还提供了一种多用户的调试模式，这种模式无需配置remote_host，而是配置[xdebug.remote_connect_back](https://xdebug.org/docs/all_settings#remote_connect_back)=On，Xdebug会记下来访地址，作为调试时的连接目标。调试过程如下：
 
 ![xdebug运行结构](https://xdebug.org/images/docs/dbgp-setup2.gif)
 
@@ -98,7 +98,9 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 ![phpinfo](http://imgur.com/mYvST9x.png)
 
 ## 配置IDE
-以PHPStorm为例，PHPStorm实现了DBGp协议，我们需要配置它监听的端口。以下是默认配置，如果没有冲突可以不用改。在帮其他同学trouble shooting时，发现php-fpm和xdebug默认都使用9000号端口，真是一个奇怪的配置啊，难道他们俩不应该经常被同时使用吗？如果你发现自己的debug不能正常工作，不妨检查一下这一点，将他们调整为不同的端口。
+以PHPStorm为例，PHPStorm实现了DBGp协议，我们需要配置它监听的端口，这个端口号需要与xdebug.remote_port一致，才能确保调试时PHP-Xdebug能连上IDE。
+
+以下是默认配置，如果没有冲突可以不用改。在帮其他同学trouble shooting时，发现php-fpm和xdebug默认都使用9000号端口，真是一个奇怪的配置啊，难道他们俩不应该经常被同时使用吗？如果你发现自己的debug不能正常工作，不妨检查一下这一点，将他们调整为不同的端口。
 
 ![pic](http://imgur.com/LO1jY1d.png)
 
@@ -113,7 +115,7 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 
 然后在代码里面打下断点。
 
-接下来，开始运行并调试代码。针对不同类型的应用，方法也不一样。但目的都是相同，就是要告诉PHP-Xdebug，我要开始调试了，给我把调试信息发过来！
+接下来，开始运行并调试代码。针对不同类型的应用，方法也不一样。但目的都是相同的，就是要告诉PHP-Xdebug，我要开始调试了，给我把调试信息发过来！
 
 ### Web App
 两种方法：
