@@ -120,7 +120,7 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 
 1. 在请求的URL地址后面加一个QueryString:XDEBUG_SESSION_START=session_name（当然用POST参数也可以），这样PHP-Xdebug就会知道该连接IDE调试了。
 
-	其实IDE提供了快捷的操作方式，不用你手动写URL参数。见[PHPStorm官方帮助](https://confluence.jetbrains.com/display/PhpStorm/Using+the+PhpStorm+Debugger)，简单来说，就是你需要配置好Web Server，PHP Web Application，再点击后上角的“小瓢虫”按钮，IDE就会自动打开浏览器，帮你输好网址，并添加QueryString:XDEBUG_SESSION_START=session_name。
+	其实IDE提供了快捷的操作方式，不用你手动写URL参数。见[Debugging PHP Web Applications with Run Debug Configurations](https://confluence.jetbrains.com/display/PhpStorm/Debugging+PHP+Web+Applications+with+Run+Debug+Configurations)，简单来说，就是你需要配置好Web Server，PHP Web Application，再点击后上角的“小瓢虫”按钮，IDE就会自动打开浏览器，帮你输好网址，并添加QueryString:XDEBUG_SESSION_START=session_name。
 	
 2. 安装浏览器插件，插件会在你请求一个PHP页面时，带上一个XDEBUG_SESSION Cookie，这样就不用在URL上带参数了。
 	
@@ -136,35 +136,29 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 
 一般用在命令行程序或者单元测试的调试中。
 
-也有两种方法：
+我们需要通过设置环境变量XDEBUG_CONFIG来通知Xdebug进行调试。当然，我们可以向这个环境变量中添加更多的设置来配置Xdebug(这些配置都可以在php.ini中进行设置)。
 
-1. 命令行参数
+```shell
+export XDEBUG_CONFIG="idekey=session_name"
+php myscript.php
+```
 	
-	```shell
-	php -dxdebug.idekey= session_name test.php
-	```
+断点命中！
 	
-2. 设置环境变量
-
-	```shell
-	export XDEBUG_CONFIG="idekey=session_name"
-	php myscript.php
-	```
+不想调试了，释放掉这个环境变量。
 	
-	断点命中！
+```shell
+unset XDEBUG_CONFIG
+```
 	
-	不想调试了，释放掉这个环境变量。
+小技巧，如果你用Zsh,可以为上述两段小代码设置别名。
 	
-	```shell
-	unset XDEBUG_CONFIG
-	```
+```shell
+alias xdebug-on="export XDEBUG_CONFIG=\"idekey=PHPSTORM\""
+alias xdebug-off="unset XDEBUG_CONFIG"
+```
 	
-	小技巧，如果你用Zsh,可以为上述两段小代码设置别名。
-	
-	```shell
-	alias xdebug-on="export XDEBUG_CONFIG=\"idekey=PHPSTORM\""
-	alias xdebug-off="unset XDEBUG_CONFIG"
-	```
+PHPStorm也提供了快捷的操作，见[Debugging PHP CLI scripts with PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Debugging+PHP+CLI+scripts+with+PhpStorm)
 	
 # 结束语
 搞完上述研究，真是够折腾，真心觉得还是怀念VS，不愧是宇宙第一IDE，啥都不用管。总之，希望这篇小文章能让你感到清晰一点，有问题或者建议，可以留下评论一起讨论。
