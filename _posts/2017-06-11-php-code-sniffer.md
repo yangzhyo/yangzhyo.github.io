@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "利用Code Sniffer检查PHP代码规范"
-date: 2017-06-10 06:21:00
+date: 2017-06-11 15:21:00
 categories: PHP
 author: John
 tags: [PHP,Coding Standard]
