@@ -7,9 +7,9 @@ author: John
 tags: [PHP,Coding Standard]
 ---
 
-> 作为一个新手，写出规范的代码也是一门必修课，除了阅读相应的代码规范文档之外，充分利用相关的工具也能使得进阶之路事半功倍。今天这篇分享将简单地梳理一下PHP规范，并介绍一个代码检查工具Code Sniffer，结合PHPStorm以及GIT进行实践。
+> 作为一个新手，写出规范的代码也是一门必修课，除了阅读相应的代码规范文档之外，充分利用相关的工具能使得进阶之路事半功倍。今天这篇分享将简单地梳理一下 PHP 规范，并介绍一个代码检查工具 Code Sniffer，结合 PHPStorm 以及 GIT 进行实践。
 
-# PHP规范
+# PHP 规范
 
 为什么需要统一代码规范？
 
@@ -40,7 +40,7 @@ tags: [PHP,Coding Standard]
 	
 * Zend
 	
-	Zend Framework使用的代码规范。
+	Zend Framework 使用的代码规范。
 	
 	参考[官方说明](https://framework.zend.com/manual/1.11/en/coding-standard.html)
 	
@@ -55,11 +55,11 @@ tags: [PHP,Coding Standard]
 * phpcs (PHP Code Standard)，用来检查代码规范
 * phpcbf (PHP Code Beautifier and Fixer)，用来自动修复代码
 
-## 安装Code Sniffer
+## 安装 Code Sniffer
 
 参考[官方文档](https://github.com/squizlabs/PHP_CodeSniffer)
 
-## 使用Code Sniffer
+## 使用 Code Sniffer
 
 **执行phpcs检查代码规范**
 
@@ -81,7 +81,7 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 --------------------------------------------------------------------------------
 ```
 
-Code-Sniffer默认使用PEAR代码规范。可以使用```--standard=xxx```指定。
+Code-Sniffer 默认使用 PEAR 代码规范。可以使用 ```--standard=xxx``` 指定。
 
 ```shell
 $ phpcs --standard=PSR2 /path/to/code/myfile.php
@@ -93,7 +93,7 @@ $ phpcs --standard=PSR2 /path/to/code/myfile.php
 $ phpcs --config-set default_standard Squiz
 ```
 
-**执行phpcbs修复代码**
+**执行 phpcbs 修复代码**
 
 ```shell
 $ phpcbf /path/to/code
@@ -107,27 +107,27 @@ Time: 2.55 secs, Memory: 25.00Mb
 
 更多功能，参考[官方文档](https://github.com/squizlabs/PHP_CodeSniffer/wiki)
 
-## 与PHP Storm集成
+## 与 PHP Storm 集成
 
-将Code Sniffer与PHP Storm集成，可以使IDE实时显示代码的规范情况，提醒开发人员修改代码，长期使用，可以让开发人员养成非常规范的代码习惯。
+将 Code Sniffer 与 PHP Storm 集成，可以使 IDE 实时显示代码的规范情况，提醒开发人员修改代码，长期使用，可以让开发人员养成非常规范的代码习惯。
 
 ![ide](http://imgur.com/bl4kgYl.png)
 
 如何配置？
 
-1. 为PHPStorm配置Code Sniffer路径：
+1. 为 PHPStorm 配置 Code Sniffer 路径：
 	![code-sniffer](http://imgur.com/X4rIc0e.png)
 	![code-sniffer](http://imgur.com/TdqQVfz.png)
-2. 设置Inspections
+2. 设置 Inspections
 
-	选择合适的Coding Standard
+	选择合适的 Coding Standard
 	![](http://imgur.com/hLmHbZo.png)
 	
-## 利用GIT Hook强制代码检查
+## 利用 GIT Hook 强制代码检查
 
-使用GIT的Pre-Commit Hook，可以在代码被提交之前，强制调用Code Sniffer进行代码检查，如果不符合规范，将阻止用户提交代码。
+使用 GIT 的 Pre-Commit Hook，可以在代码被提交之前，强制调用 Code Sniffer 进行代码检查，如果不符合规范，将阻止用户提交代码。
 
-1. 在项目的.git/hooks建立pre-commit文件
+1. 在项目的 ```.git/hooks``` 建立 ```pre-commit``` 文件
 2. 写入代码：
 	[Pre-Commit Gist](https://gist.githubusercontent.com/yangzhyo/6dad52e862c5efa368c992efc52e1fb9/raw/dec18f55ddfdf6eeb6d659a19398ec2d106fface/pre-commit.php)
 	
@@ -135,4 +135,4 @@ Time: 2.55 secs, Memory: 25.00Mb
 
 # 结束语
 
-会使用工具进行生产活动是人类区别于动物成为智慧生物的本质，IT技术生产活动亦是如此，使用工具提高生产效能则是一个优秀技术人员必备素质。
+会使用工具进行生产活动是人类区别于动物成为智慧生物的本质，IT 技术生产活动亦是如此，使用工具提高生产效能则是一个优秀技术人员必备素质。
