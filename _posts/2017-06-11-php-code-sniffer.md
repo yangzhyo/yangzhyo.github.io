@@ -43,6 +43,8 @@ tags: [PHP,Coding Standard]
 	Zend Framework 使用的代码规范。
 	
 	参考[官方说明](https://framework.zend.com/manual/1.11/en/coding-standard.html)
+
+<!-- more -->
 	
 # Code Sniffer
 
