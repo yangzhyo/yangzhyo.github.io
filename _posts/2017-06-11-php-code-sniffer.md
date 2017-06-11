@@ -61,7 +61,7 @@ tags: [PHP,Coding Standard]
 
 ## 使用 Code Sniffer
 
-**执行phpcs检查代码规范**
+**执行 phpcs 检查代码规范**
 
 ```shell
 $ phpcs /path/to/code/myfile.php
