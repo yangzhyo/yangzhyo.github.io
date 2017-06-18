@@ -9,6 +9,8 @@ tags: [PHP,Coding Standard]
 
 > 作为一个新手，写出规范的代码也是一门必修课，除了阅读相应的代码规范文档之外，充分利用相关的工具能使得进阶之路事半功倍。今天这篇分享将简单地梳理一下 PHP 规范，并介绍一个代码检查工具 Code Sniffer，结合 PHPStorm 以及 GIT 进行实践。
 
+<!-- more -->
+
 # PHP 规范
 
 为什么需要统一代码规范？
@@ -44,8 +46,6 @@ tags: [PHP,Coding Standard]
 	
 	参考[官方说明](https://framework.zend.com/manual/1.11/en/coding-standard.html)
 
-<!-- more -->
-	
 # Code Sniffer
 
 官方网站：[https://github.com/squizlabs/PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)

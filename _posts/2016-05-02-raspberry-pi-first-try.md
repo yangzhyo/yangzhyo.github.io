@@ -10,6 +10,8 @@ tags: [Raspberry Pi, Raspbian]
 从公司搞来一台树莓派二代Model B，当下最新应该是第三代Model B。
 还没想好怎么玩，先把系统装上，跑起来看看啥样。
 
+<!-- more -->
+
 ##### 配置：
 
 * A 900MHz quad-core ARM Cortex-A7 CPU

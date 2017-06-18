@@ -9,6 +9,8 @@ tags: [PHP,Xdebug]
 
 > 工欲善其事必先利其器，学习一门新语言，调试器的使用必不可少，看到有一些同学还在通过echo或者var_dump来调试程序，小小的心疼一下，觉得有必要分享一下PHP调试器的使用。
 
+<!-- more -->
+
 PHP目前有两种流行的调试器，
 
 * [Xdebug](https://xdebug.org/)

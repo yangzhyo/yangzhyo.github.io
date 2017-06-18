@@ -9,6 +9,8 @@ tags : [WPF]
 
 > 本文译自[Greg Levenhagen](http://greglevenhagen.com/about-me/ "Greg Levenhagen")的一篇博客，原文地址[Is WPF Dead? – NO!](http://greglevenhagen.com/is-wpf-dead-no/ "Is WPF Dead? – NO!")
 
+<!-- more -->
+
 Greg是微软客户端开发方面的MVP，也是Skyline公司的高级软件工程顾问。他经常被问到关于WPF的未来，WPF是否已死？让我们来看几条开发者表示担忧的理由：（没有特定顺序）
 
  - 微软推出基于Windows Modern UI（以前叫Metro UI）和WinRT的应用；

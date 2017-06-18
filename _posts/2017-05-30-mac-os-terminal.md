@@ -9,9 +9,11 @@ tags: [macOS]
 
 > 今天是传统端午节，大家吃粽子了吗？老羊在上海祝大家节日快乐。
 
-# 改装macOS默认Terminal
-
 最近老羊的工作语言从.NET换成了PHP，工作站也从Windows切到了macOS上。新的环境，必然是各种折(Zhuang)腾(Bi)，今天先折腾Terminal，默认的实在是有点古董。
+
+<!-- more -->
+
+# 改装macOS默认Terminal
 
 先看看效果：
 

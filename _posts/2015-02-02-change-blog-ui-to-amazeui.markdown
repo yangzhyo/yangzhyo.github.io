@@ -13,6 +13,8 @@ tags : [Amaze UI,前端]
  2. 良好的跨屏适配和兼容性，Amaze UI 以“移动优先(Mobile first)”为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配。而且针对移动平台做了性能和体积方面的优化，大幅度提升用户体验。
  3. 丰富的组件，包含近 20 个 CSS 组件、10 个 JS 组件，更有 17 款包含近 60 个主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面。
 
+<!-- more -->
+
 ```html
 <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
 ```

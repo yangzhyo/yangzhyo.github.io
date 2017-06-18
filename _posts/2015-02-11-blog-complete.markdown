@@ -18,6 +18,8 @@ tags : [Amaze UI,Jekyll,前端]
  6. 评论系统
  7. 文章搜索
  
+<!-- more -->
+
 **博客技术介绍**
 
 基于Jekyll + AmazeUI
