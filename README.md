@@ -1,3 +1,5 @@
 ###
-This is John.Z.Yang's blog.
-...
+Source code of my personal blog.
+
+[http://yangzhiyong.com](http://yangzhiyong.com)
+
