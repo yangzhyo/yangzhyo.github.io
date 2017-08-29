@@ -111,7 +111,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 	``` shell
    ZSH_THEME="agnoster"
 	```
-3. 命令行默认会显示用户名和机器名，可能会比较长，可能通过修改主题脚本来解决，将```~/.oh-my-zsh/themes/agnoster.zsh-theme```中的```prompt_conext()```方法中的代码注释掉即可。
+3. 命令行默认会显示用户名和机器名，可能会比较长，可以通过修改主题脚本来解决，将```~/.oh-my-zsh/themes/agnoster.zsh-theme```中的```prompt_conext()```方法中的代码注释掉即可。
 
 ## zsh-syntax-highlighting plugin
 > 一个锦上添花的[插件](https://github.com/zsh-users/zsh-syntax-highlighting)，可以在你敲命令的时候，识别命令的正确性，正确显示为绿色，错误显示为红色。
