@@ -30,7 +30,7 @@ tags: [macOS]
 
 # 改装过程
 ## iTerm
-> **[iTerm](http://www.iterm2.com/)**是 macOS 默认终端程序（Terminal）的替代品，它带来更现代的体验。
+> **[iTerm](http://www.iterm2.com/)** 是 macOS 默认终端程序（Terminal）的替代品，它带来更现代的体验。
 
 ### 如何安装？
 直接 [下载](http://www.iterm2.com/downloads.html)，拖拽到应用```应用程序```目录。

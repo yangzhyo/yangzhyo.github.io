@@ -16,7 +16,7 @@ PHP 目前有两种流行的调试器，
 * [Xdebug](https://xdebug.org/)
 * [Zend Debugger](https://www.zend.com/en/products/server/z-ray)
 
-我在学习和研究过程中，发现网上的各种信息过于凌乱，感到痛苦，影响理解和使用。今天我以Xdebug为例，先解释其基本的工作原理，再说明生产过程中如何使用，希望能带给大家清晰易懂的知识。
+我在学习和研究过程中，发现网上的各种信息过于凌乱，感到痛苦，影响理解和使用。今天我以 Xdebug 为例，先解释其基本的工作原理，再说明生产过程中如何使用，希望能带给大家清晰易懂的知识。
 
 # Xdebug
 
@@ -107,7 +107,7 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 ![pic](http://imgur.com/LO1jY1d.png)
 
 ## 开始Debug
-之前说过，IDE是作为一个 Server 的角色监听特定端口，等待 Xdebug 来连接，对于 PHPStorm 开启监听非常简单，直接点击右上角的“小电话”按钮：
+之前说过，IDE 是作为一个 Server 的角色监听特定端口，等待 Xdebug 来连接，对于 PHPStorm 开启监听非常简单，直接点击右上角的“小电话”按钮：
 
 ![pic](http://imgur.com/AkOjV7B.png)
 
@@ -122,7 +122,7 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 ### Web App
 两种方法：
 
-1. 在请求的URL地址后面加一个 QueryString:XDEBUG_SESSION_START=session_name（当然用 POST 参数也可以），这样 PHP-Xdebug 就会知道该连接 IDE 调试了。
+1. 在请求的 URL 地址后面加一个 QueryString:XDEBUG_SESSION_START=session_name（当然用 POST 参数也可以），这样 PHP-Xdebug 就会知道该连接 IDE 调试了。
 
 	其实 IDE 提供了快捷的操作方式，不用你手动写 URL 参数。见 [Debugging PHP Web Applications with Run Debug Configurations](https://confluence.jetbrains.com/display/PhpStorm/Debugging+PHP+Web+Applications+with+Run+Debug+Configurations)，简单来说，就是你需要配置好 Web Server，PHP Web Application，再点击后上角的“小瓢虫”按钮，IDE 就会自动打开浏览器，帮你输好网址，并添加 QueryString:XDEBUG_SESSION_START=session_name。
 	
@@ -140,7 +140,7 @@ xdebug.remote_enable=On，表示打开远程调试开关，这是必须的。
 
 一般用在命令行程序或者单元测试的调试中。
 
-我们需要通过设置环境变量 XDEBUG_CONFIG 来通知 Xdebug 进行调试。当然，我们可以向这个环境变量中添加更多的设置来配置 Xdebug(这些配置都可以在 php.ini 中进行设置)。
+我们需要通过设置环境变量 XDEBUG_CONFIG 来通知 Xdebug 进行调试。当然，我们可以向这个环境变量中添加更多的设置来配置 Xdebug（这些配置都可以在 php.ini 中进行设置）。
 
 ```shell
 export XDEBUG_CONFIG="idekey=session_name"
@@ -155,14 +155,14 @@ php myscript.php
 unset XDEBUG_CONFIG
 ```
 	
-小技巧，如果你用 Zsh,可以为上述两段小代码设置别名。
+小技巧，如果你用 Zsh，可以为上述两段小代码设置别名。
 	
 ```shell
 alias xdebug-on="export XDEBUG_CONFIG=\"idekey=PHPSTORM\""
 alias xdebug-off="unset XDEBUG_CONFIG"
 ```
 	
-PHPStorm 也提供了快捷的操作，见[Debugging PHP CLI scripts with PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Debugging+PHP+CLI+scripts+with+PhpStorm)
+PHPStorm 也提供了快捷的操作，见 [Debugging PHP CLI scripts with PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Debugging+PHP+CLI+scripts+with+PhpStorm)
 	
 # 结束语
 搞完上述研究，真是够折腾，真心觉得还是怀念 VS，不愧是宇宙第一 IDE，啥都不用管。总之，希望这篇小文章能让你感到清晰一点，有问题或者建议，可以留下评论一起讨论。
