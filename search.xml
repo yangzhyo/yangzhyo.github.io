@@ -54,7 +54,7 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> 前端技术 </category>
           
       </categories>
       
@@ -188,7 +188,7 @@
       
       <categories>
           
-          <category> raspberrypi </category>
+          <category> 运维 </category>
           
       </categories>
       
@@ -211,7 +211,7 @@
       
       <categories>
           
-          <category> cloud </category>
+          <category> 运维 </category>
           
       </categories>
       
@@ -221,6 +221,8 @@
             <tag> AWS </tag>
             
             <tag> VPS </tag>
+            
+            <tag> Cloud </tag>
             
         </tags>
       
@@ -234,7 +236,7 @@
       
       <categories>
           
-          <category> .net </category>
+          <category> .Net </category>
           
       </categories>
       
@@ -255,7 +257,7 @@
       
       <categories>
           
-          <category> .net </category>
+          <category> .Net </category>
           
       </categories>
       
@@ -283,11 +285,11 @@
       
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> Amaze UI </tag>
             
             <tag> Jekyll </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
@@ -308,9 +310,9 @@
       
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> Amaze UI </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
