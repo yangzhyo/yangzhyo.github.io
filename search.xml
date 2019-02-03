@@ -162,7 +162,7 @@
     </entry>
     
     <entry>
-      <title>Blog基于Hexo重建</title>
+      <title>Blog 基于 Hexo 重建</title>
       <link href="/2018/04/17/blog-rebuild-with-hexo/"/>
       <url>/2018/04/17/blog-rebuild-with-hexo/</url>
       <content type="html"><![CDATA[<blockquote><p>在浏览博客的时候发现一套极简主义风格的皮肤，很干净、清新，非常喜欢，于是给折腾上来了。这套前端基于 Hexo + NexT，替换掉前版的 Jekyll + Amaze UI.</p></blockquote><a id="more"></a><h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>Hexo 是一套快速、简洁且高效的博客框架，基于 Node.js 构建</p><ul><li>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</li><li>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</li><li>只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。</li><li>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</li></ul><p>安装使用说明，直接参考官文：</p><h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/index.html</a></p><h2 id="Github-Repo"><a href="#Github-Repo" class="headerlink" title="Github Repo"></a>Github Repo</h2><p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p><h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><p>NexT 是一套 Hexo 皮肤，极简主义风格，官方 Slogan 『精于心，简于形』</p><ul><li>一个主题，三种外观，选您所好。通过主题中的主题（亦称 Scheme），您可以方便地改变您博客的外观，同时几乎所有配置同样适用。</li><li>多种语言支持。NexT 现已支持 10 种语言。</li><li>5 套代码高亮主题。NexT 使用 Tomorrow 的代码高亮配色，只需要一行配置，即可选择您所喜爱的配色方案。</li><li>定制属于您自己的 NexT。NexT 拥有丰富而简单的配置，结合第三方服务，打造属于您自己的博客。</li></ul><p>详细的说明和用法，直接参考官文：</p><h2 id="官方文档-1"><a href="#官方文档-1" class="headerlink" title="官方文档"></a>官方文档</h2><ul><li><a href="https://theme-next.org/" target="_blank" rel="noopener">https://theme-next.org/</a></li><li><a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener">https://theme-next.iissnan.com/</a></li></ul><h2 id="Github-Repo-1"><a href="#Github-Repo-1" class="headerlink" title="Github Repo"></a>Github Repo</h2><ul><li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></li><li><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></li></ul>]]></content>
@@ -344,7 +344,7 @@
     </entry>
     
     <entry>
-      <title>加入Visual Studio Dev Essentials计划</title>
+      <title>加入 Visual Studio Dev Essentials 计划</title>
       <link href="/2016/02/24/visual-studio-dev-essentials/"/>
       <url>/2016/02/24/visual-studio-dev-essentials/</url>
       <content type="html"><![CDATA[<p>技术高度社区化的今天，各个生态环境的主宰者们都想方设法盘活自己的阵营，给开发者带来很多福音。今天来看看微软给我们带来些什么礼物？</p><a id="more"></a><h4 id="Visual-Studio-Dev-Essentials"><a href="#Visual-Studio-Dev-Essentials" class="headerlink" title="Visual Studio Dev Essentials"></a>Visual Studio Dev Essentials</h4><p>从 <a href="http://www.visualstudio.com" target="_blank" rel="noopener">Visual Studio 官方主页</a> 的显眼位置，可以看到这个计划的推广方案：</p><blockquote><p>Everything you need to build and deploy your app on any platform – for FREE.</p><p>获取您在任何平台上生成和部署应用所需的一切资源。 凭借先进的工具、云的强大功能、培训和支持，这是我们有史以来提供的最全面的免费开发者程序。</p></blockquote><p>我们直接点进去一窥究竟吧：</p><p><a href="https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx" title="点击查看" target="_blank" rel="noopener">https://www.visualstudio.com/zh-cn/product/visual-studio-dev-essentials-vs.aspx</a></p><h4 id="提供什么？"><a href="#提供什么？" class="headerlink" title="提供什么？"></a>提供什么？</h4><p><img src="http://i.imgur.com/ZnGSDxq.jpg" alt="Imgur"></p><h4 id="计划权益"><a href="#计划权益" class="headerlink" title="计划权益"></a>计划权益</h4><p><img src="http://i.imgur.com/KjG0xpO.jpg" alt="Imgur"></p><p><img src="http://i.imgur.com/MIYgQLH.jpg" alt="Imgur"></p><h4 id="得到了哪些权益？"><a href="#得到了哪些权益？" class="headerlink" title="得到了哪些权益？"></a>得到了哪些权益？</h4><p><img src="http://i.imgur.com/lG9ixBD.jpg" alt="Imgur"></p><h5 id="Tool"><a href="#Tool" class="headerlink" title="Tool"></a>Tool</h5><p><img src="http://i.imgur.com/aYhtvaq.jpg" alt="Imgur"></p><h5 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h5><p><img src="http://i.imgur.com/zkgeF5u.jpg" alt="Imgur"></p><h5 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h5><p><img src="http://i.imgur.com/4O0CSpG.jpg" alt="Imgur"></p><h4 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h4><p>还不错吧，从 IDE 到工具，再从平台到服务，还有免费的培训和支持，多么感人的计划。笔者赶紧取了 Parallels Desktop/Access 的免费订阅（三个月）来压压惊。另外还有一年的 Azure 免费计划。说到免费的云服务，还有一位业界良心，那就是 AWS，下一篇文章单独来介绍他好了。</p>]]></content>
@@ -365,7 +365,7 @@
     </entry>
     
     <entry>
-      <title>WPF已死？-- No!</title>
+      <title>WPF 已死？-- No!</title>
       <link href="/2015/03/23/is-wpf-dead-no/"/>
       <url>/2015/03/23/is-wpf-dead-no/</url>
       <content type="html"><![CDATA[<blockquote><p>本文译自 <a href="http://greglevenhagen.com/about-me/" title="Greg Levenhagen" target="_blank" rel="noopener">Greg Levenhagen</a> 的一篇博客，原文地址 <a href="http://greglevenhagen.com/is-wpf-dead-no/" title="Is WPF Dead? – NO!" target="_blank" rel="noopener">Is WPF Dead? – NO!</a></p></blockquote><a id="more"></a><p>Greg 是微软客户端开发方面的 MVP，也是 Skyline 公司的高级软件工程顾问。他经常被问到关于 WPF 的未来，WPF 是否已死？让我们来看几条开发者表示担忧的理由：（没有特定顺序）</p><ul><li>微软推出基于 Windows Modern UI（以前叫Metro UI）和 WinRT 的应用；</li><li>WPF 官方团队在 MSDN 上的博客（<a href="http://blogs.msdn.com/b/wpf/" target="_blank" rel="noopener">http://blogs.msdn.com/b/wpf/</a>）停止更新已经超过 3 年；</li><li>StackOverflow 上很多讨论：<a href="http://stackoverflow.com/questions/21035019/is-wpf-suitable-for-line-of-business-software" target="_blank" rel="noopener">http://stackoverflow.com/questions/21035019/is-wpf-suitable-for-line-of-business-software</a></li><li>Rocky Lhotka 写了一篇博客：<a href="http://www.lhotka.net/weblog/WinRTAsTheNewSilverlightAndWPF.aspx" target="_blank" rel="noopener">http://www.lhotka.net/weblog/WinRTAsTheNewSilverlightAndWPF.aspx</a></li><li>Andrew Brust 的博客论述：<a href="http://visualstudiomagazine.com/articles/2014/02/11/satya-nadellas-to-do-list.aspx" target="_blank" rel="noopener">http://visualstudiomagazine.com/articles/2014/02/11/satya-nadellas-to-do-list.aspx</a></li><li>除上述几条，一定还有不少关于 WPF 未来的担忧。</li></ul><p>几点说明 WPF 未死的理由：</p><ul><li>Greg 刚刚参加了一个有微软参加的会议，他得到的信息是微软正在准备下一个版本的 WPF。虽然不能透露更多的细节，但事实上微软仍在收集有关 WPF 的反馈和活动；</li><li>如果你想提交反馈，请戳 <a href="https://dotnet.uservoice.com/forums/40583-wpf-feature-suggestions" target="_blank" rel="noopener">https://dotnet.uservoice.com/forums/40583-wpf-feature-suggestions</a></li><li>在去年的 BUILD 会议的讲台上，WPF 得到了时间和一席之地，表明了微软的态度；</li><li>.NET 4.5 推出了 WPF 的新特性。<a href="http://msdn.microsoft.com/en-us/library/bb613588%28v=vs.110%29.aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/library/bb613588(v=vs.110).aspx</a></li></ul><!-- more --><p>对于还在犹豫是否应该使用 WPF 来构建业务支撑系统的企业而言，WPF 其实是一种非常好的技术。我不能预测更宏观的问题，比如说未来客户端技术的发展方向。但我确切知道，WPF 还没有死，她还在继续维护改进中。然而，移动领域仍然会持续增长。我看过不少 Windows Store, Windows Phone, WPF, iOS, Andorid 等平台的 App 案例，他们是如何创造商业价值，以及他们怎样与终端用户联系在一起。</p><p>Windows Store App 可以用来构建业务支撑系统吗？当然可以。我自己也曾做过几个。我认为要想使用 WRT 做好业务系统，我们需要在设计思维方面作出一些改变。这也许意味着要把你的企业级应用拆解成一系列的应用。可以确信 WPF 更适合这样的场景，因为她拥有更强大的特征。但也不能仅仅是因为业务系统就放弃 WinRT 这套解决方案，任何应用程序我们都会去讨论她的商业价值，技术的决策应该是要去帮忙实现其价值。</p><p>很多开发者去学习 Windows Store, WPF, Windows Phone or Silverlight 等平台，这当然没问题。但我认为一个开发者更应该熟知 XAML，而非特定的某一个平台。因为 XAML 是跨不同平台的公共语言，你的技能可以在这些平台之间自由切换。</p>]]></content>
@@ -386,10 +386,10 @@
     </entry>
     
     <entry>
-      <title>老杨的博客1.0发布</title>
+      <title>老杨的博客 1.0 发布</title>
       <link href="/2015/02/11/blog-complete/"/>
       <url>/2015/02/11/blog-complete/</url>
-      <content type="html"><![CDATA[<p>至此，老杨的博客1.0版本发布了。实现了博客的基本功能：</p><ol><li>博客信息</li><li>博客流</li><li>时间线</li><li>标签系统</li><li>文章分类</li><li>文章归档</li><li>评论系统</li><li>文章搜索</li></ol><a id="more"></a><p><strong>博客技术介绍</strong></p><p>基于Jekyll + AmazeUI</p>]]></content>
+      <content type="html"><![CDATA[<p>至此，老杨的博客 1.0 版本发布了。实现了博客的基本功能：</p><ol><li>博客信息</li><li>博客流</li><li>时间线</li><li>标签系统</li><li>文章分类</li><li>文章归档</li><li>评论系统</li><li>文章搜索</li></ol><a id="more"></a><p><strong>博客技术介绍</strong></p><p>基于 Jekyll + AmazeUI</p>]]></content>
       
       <categories>
           
@@ -400,18 +400,18 @@
       
         <tags>
             
+            <tag> 前端 </tag>
+            
             <tag> Amaze UI </tag>
             
             <tag> Jekyll </tag>
-            
-            <tag> 前端 </tag>
             
         </tags>
       
     </entry>
     
     <entry>
-      <title>把博客前端换成了Amaze UI</title>
+      <title>把博客前端换成了 Amaze UI</title>
       <link href="/2015/02/02/change-blog-ui-to-amazeui/"/>
       <url>/2015/02/02/change-blog-ui-to-amazeui/</url>
       <content type="html"><![CDATA[<p>把博客的前端框架换成妹子 UI（Amaze UI）了，原因有三：</p><ol><li>良好的本地化支持，完美支持中文字体。</li><li>良好的跨屏适配和兼容性，Amaze UI 以“移动优先 (Mobile first)”为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配。而且针对移动平台做了性能和体积方面的优化，大幅度提升用户体验。</li><li>丰富的组件，包含近 20 个 CSS 组件、10 个 JS 组件，更有 17 款包含近 60 个主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面。</li></ol><a id="more"></a><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/assets/css/amazeui.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure><p>更多资料，请参考官方网站：</p><ul><li><a href="http://amazeui.org" target="_blank" rel="noopener">amazeui.org</a></li><li><a href="http://meizi.io" target="_blank" rel="noopener">meizi.io</a></li></ul>]]></content>
@@ -425,9 +425,9 @@
       
         <tags>
             
-            <tag> Amaze UI </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> Amaze UI </tag>
             
         </tags>
       
