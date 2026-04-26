@@ -3,48 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>y9g 的个人主页</title>
+    <title>YANGZHYO // 极客技术工作室</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到 y9g 的个人主页</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#projects">项目经验</a></li>
-                <li><a href="#contact">联系方式</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>关于我</h2>
-            <p>你好！我是一名技术爱好者，热爱编程和探索新事物。在这里我会分享我的学习记录和有趣的项目。</p>
-        </section>
-
-        <section id="projects">
-            <h2>项目经验</h2>
-            <div class="project-card">
-                <h3>项目一</h3>
-                <p>这是一个很棒的项目描述，你可以在这里介绍你做过的有趣的东西。</p>
+    <div class="terminal">
+        <header>
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="YANGZHYO STUDIO">YANGZHYO STUDIO</h1>
             </div>
-            <div class="project-card">
-                <h3>项目二</h3>
-                <p>这也是一个很棒的项目描述，记得替换成你自己的项目！</p>
-            </div>
-        </section>
+            <p class="subtitle">> SYSTEM_READY_ <span class="blink">█</span></p>
+            <nav>
+                <ul>
+                    <li><a href="#about">[01_ABOUT]</a></li>
+                    <li><a href="#projects">[02_PROJECTS]</a></li>
+                    <li><a href="#contact">[03_CONTACT]</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="about" class="scanline-box">
+                <h2>> ./execute about.sh</h2>
+                <div class="content">
+                    <p>INITIATING SEQUENCE...</p>
+                    <p>LOADING PROFILE: yangzhyo...</p>
+                    <p>STATUS: ACTIVE.</p>
+                    <p><br>欢迎来到 YANGZHYO 极客技术工作室。我们专注于底层架构探索、前沿技术研发以及赛博空间的极限构建。代码是我们的语言，终端是我们的世界。</p>
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>联系方式</h2>
-            <p>Email: your-email@example.com</p>
-            <p>GitHub: <a href="https://github.com/y9g" target="_blank">@y9g</a></p>
-        </section>
-    </main>
+            <section id="projects" class="scanline-box">
+                <h2>> ls -l /projects/</h2>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Project: NEURAL-LINK</h3>
+                            <span class="status active">[ACTIVE]</span>
+                        </div>
+                        <p class="desc">下一代脑机接口通信协议。基于自适应神经元映射算法，实现人脑与外部设备的超低延迟双向数据流交互。</p>
+                        <div class="tech-stack">Tech: [C++] [Rust] [WebAssembly]</div>
+                    </div>
 
-    <footer>
-        <p>&copy; 2026 y9g. All rights reserved.</p>
-    </footer>
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Project: QUANTUM_CYPHER</h3>
+                            <span class="status classified">[CLASSIFIED]</span>
+                        </div>
+                        <p class="desc">利用量子纠缠态特性构建的抗量子破解加密引擎。目前处于理论验证阶段，已实现每秒 10^12 次的哈希碰撞免疫测试。</p>
+                        <div class="tech-stack">Tech: [Q#] [Python] [Cryptography]</div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Project: CYBER_SCRAPER v2.0</h3>
+                            <span class="status deployed">[DEPLOYED]</span>
+                        </div>
+                        <p class="desc">分布式高并发数据嗅探网络。能在 2.4 秒内绕过常规 WAF，提取并分析 PB 级的异构数据。</p>
+                        <div class="tech-stack">Tech: [Go] [gRPC] [Kubernetes]</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="scanline-box">
+                <h2>> ping contact_node</h2>
+                <div class="content">
+                    <p class="terminal-prompt">root@yangzhyo:~# connect --target email</p>
+                    <p>ESTABLISHED: <a href="mailto:root@yangzhyo.io">root@yangzhyo.io</a></p>
+                    <p class="terminal-prompt">root@yangzhyo:~# connect --target github</p>
+                    <p>ESTABLISHED: <a href="https://github.com/yangzhyo" target="_blank">github.com/yangzhyo</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>EOF. &copy; 2026 YANGZHYO SYS.</p>
+        </footer>
+    </div>
 </body>
 </html>
