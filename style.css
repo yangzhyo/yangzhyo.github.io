@@ -304,3 +304,262 @@ footer {
         margin: var(--spacing-lg) auto;
     }
 }
+
+/* -------------------------------------
+   NEW TRUST SIGNAL ADDITIONS 
+   ------------------------------------- */
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.portfolio-card {
+    background-color: var(--color-surface);
+    border-radius: var(--rounded-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-outline);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.portfolio-image {
+    height: 200px;
+    width: 100%;
+}
+
+.portfolio-content {
+    padding: var(--spacing-md);
+}
+
+.portfolio-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xs);
+    display: block;
+}
+
+.portfolio-content h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.25rem;
+}
+
+.portfolio-content p {
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background-color: var(--color-surface);
+    border-radius: var(--rounded-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-outline);
+}
+
+.contact-info-panel {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info-panel h3 {
+    color: var(--color-background);
+    margin-bottom: var(--spacing-sm);
+    font-size: 2rem;
+}
+
+.contact-info-panel p {
+    color: var(--color-surface-alt);
+    margin-bottom: var(--spacing-md);
+}
+
+.info-details p {
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.info-details strong {
+    color: var(--color-background);
+}
+
+.info-details a {
+    color: #818CF8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.info-details a:hover {
+    color: var(--color-background);
+}
+
+.company-reg {
+    margin-top: var(--spacing-md);
+    font-size: 0.8rem !important;
+    color: rgba(255,255,255,0.5) !important;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: var(--spacing-sm);
+}
+
+.contact-form-panel {
+    padding: var(--spacing-lg);
+    background-color: var(--color-background);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-outline);
+    border-radius: var(--rounded-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-primary);
+    background-color: var(--color-surface-alt);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.1);
+    background-color: var(--color-background);
+}
+
+.btn-submit {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--rounded-sm);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-outline);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--rounded-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-surface-alt);
+    border-color: var(--color-secondary);
+}
+
+/* Footer Adjustments */
+.footer-brand p {
+    margin: 0;
+}
+.footer-legal {
+    font-size: 0.75rem !important;
+    margin-top: var(--spacing-xs) !important;
+    color: rgba(71, 85, 105, 0.7) !important;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-outline);
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: var(--spacing-md) 0;
+}
+
+.cookie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.cookie-content p {
+    margin: 0;
+    flex: 1;
+    min-width: 300px;
+    font-size: 0.875rem;
+}
+
+.cookie-content a {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    white-space: nowrap;
+}
+
+.cookie-buttons .btn-submit,
+.cookie-buttons .btn-outline {
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .cookie-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .cookie-buttons {
+        justify-content: flex-end;
+    }
+}
