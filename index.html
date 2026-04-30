@@ -177,6 +177,24 @@
                 localStorage.setItem('cookieConsent', 'declined');
                 banner.style.display = 'none';
             });
+
+            // Override default browser validation messages to English
+            const formInputs = document.querySelectorAll('form input[required], form textarea[required]');
+            formInputs.forEach(input => {
+                input.addEventListener('invalid', function(e) {
+                    if (this.validity.valueMissing) {
+                        this.setCustomValidity('Please fill out this field.');
+                    } else if (this.validity.typeMismatch && this.type === 'email') {
+                        this.setCustomValidity('Please enter a valid email address.');
+                    } else {
+                        this.setCustomValidity('');
+                    }
+                });
+                
+                input.addEventListener('input', function(e) {
+                    this.setCustomValidity('');
+                });
+            });
         });
     </script>
 </body>
