@@ -3,81 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y9G // 极客技术工作室</title>
+    <title>Y9G Studio | 数字创意与品牌设计机构</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="terminal">
-        <header>
-            <div class="glitch-wrapper">
-                <h1 class="glitch" data-text="Y9G STUDIO">Y9G STUDIO</h1>
-            </div>
-            <p class="subtitle">> SYSTEM_READY_ <span class="blink">█</span></p>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Y9G Studio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">[01_ABOUT]</a></li>
-                    <li><a href="#projects">[02_PROJECTS]</a></li>
-                    <li><a href="#contact">[03_CONTACT]</a></li>
+                    <li><a href="#services">核心服务</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <main>
-            <section id="about" class="scanline-box">
-                <h2>> ./execute about.sh</h2>
-                <div class="content">
-                    <p>INITIATING SEQUENCE...</p>
-                    <p>LOADING PROFILE: y9g...</p>
-                    <p>STATUS: ACTIVE.</p>
-                    <p><br>欢迎来到 Y9G 极客技术工作室。我们专注于底层架构探索、前沿技术研发以及赛博空间的极限构建。代码是我们的语言，终端是我们的世界。</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>构建卓越的数字体验</h2>
+                <p>我们是一家专注于品牌设计、用户体验（UI/UX）和高端网站定制的数字创意机构，帮助企业在数字时代脱颖而出。</p>
+            </div>
+        </section>
+
+        <section id="services" class="container section">
+            <h2 class="section-title">我们的服务</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>UI/UX 设计</h3>
+                    <p>以用户为中心，为您的App、Web应用提供直观、美观的界面设计，提升用户转化与留存。</p>
                 </div>
-            </section>
-
-            <section id="projects" class="scanline-box">
-                <h2>> ls -l /projects/</h2>
-                
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Project: NEURAL-LINK</h3>
-                            <span class="status active">[ACTIVE]</span>
-                        </div>
-                        <p class="desc">下一代脑机接口通信协议。基于自适应神经元映射算法，实现人脑与外部设备的超低延迟双向数据流交互。</p>
-                        <div class="tech-stack">Tech: [C++] [Rust] [WebAssembly]</div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Project: QUANTUM_CYPHER</h3>
-                            <span class="status classified">[CLASSIFIED]</span>
-                        </div>
-                        <p class="desc">利用量子纠缠态特性构建的抗量子破解加密引擎。目前处于理论验证阶段，已实现每秒 10^12 次的哈希碰撞免疫测试。</p>
-                        <div class="tech-stack">Tech: [Q#] [Python] [Cryptography]</div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Project: CYBER_SCRAPER v2.0</h3>
-                            <span class="status deployed">[DEPLOYED]</span>
-                        </div>
-                        <p class="desc">分布式高并发数据嗅探网络。能在 2.4 秒内绕过常规 WAF，提取并分析 PB 级的异构数据。</p>
-                        <div class="tech-stack">Tech: [Go] [gRPC] [Kubernetes]</div>
-                    </div>
+                <div class="card">
+                    <h3>品牌视觉建设</h3>
+                    <p>从Logo设计到企业全套VI系统，打造统一且极具辨识度的品牌形象，传达核心商业价值。</p>
                 </div>
-            </section>
-
-            <section id="contact" class="scanline-box">
-                <h2>> ping contact_node</h2>
-                <div class="content">
-                    <p class="terminal-prompt">root@y9g:~# connect --target github</p>
-                    <p>ESTABLISHED: <a href="https://github.com/yangzhyo" target="_blank">github.com/yangzhyo</a></p>
+                <div class="card">
+                    <h3>企业官网定制</h3>
+                    <p>采用前沿的响应式Web技术，为您打造快速、安全、SEO友好的现代企业官网与电商平台。</p>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <footer>
-            <p>EOF. &copy; 2026 Y9G SYS.</p>
-        </footer>
-    </div>
+        <section id="about" class="container section">
+            <h2 class="section-title">关于 Y9G Studio</h2>
+            <div class="content">
+                <p style="margin-bottom:1rem; text-align:center;">Y9G Studio 创立于数字浪潮之中，致力于为全球各行业的初创公司及知名企业提供顶尖的数字化解决方案。</p>
+                <p style="text-align:center;">我们坚信，优秀的设计不仅在于视觉上的美感，更在于解决实际的商业问题。通过深入理解客户的业务需求，我们创造出既有艺术感染力又兼具实用价值的数字产品。</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container section">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-info">
+                <p><strong>公司地址：</strong> 科技园南区 100 号 A 座 20 楼, 深圳市, 广东省, 中国 518000</p>
+                <p><strong>联系邮箱：</strong> <a href="mailto:yangzhyo@gmail.com">yangzhyo@gmail.com</a></p>
+                <p><strong>联系电话：</strong> +86 138 0000 0000</p>
+                <p><strong>工作时间：</strong> 周一至周五 9:00 - 18:00 (GMT+8)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Y9G Studio. 保留所有权利。</p>
+            <div class="footer-links">
+                <a href="privacy.html">隐私政策 (Privacy Policy)</a>
+                <a href="terms.html">服务条款 (Terms of Service)</a>
+            </div>
+        </div>
+    </footer>
 </body>
-</html>tml>
+</html>
